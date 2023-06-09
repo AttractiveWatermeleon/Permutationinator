@@ -29,15 +29,12 @@ int main()
     // encrypt the string, check if the first character is S, and if it is - write it to the file. 
     // Do this for every permutation of the string. 
 
-    cout << "Working...";
+    cout << "Working... Harder.";
     do 
     {
         // see Helpinators.cpp for details
         outputString = performEncryption(pigpenString);
-        if (outputString[0] == 'S')
-        {
-            myFile << outputString + "\n";
-        }
+        myFile << outputString + "\n";
         i++;
     } 
     while (next_permutation(pigpenString.begin(), pigpenString.end()));
